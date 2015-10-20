@@ -21,15 +21,14 @@ I am learning Groovy language for about $experience months./$
 def myIntroLongVersion = /${myIntroShortVersion}My home animals are ${ animals.keySet().join(" and ") }.
 Their names are ${ animals.values().join(" and ") }./
 
-if (isShortVersion) {
-    println myIntroShortVersion
-} else {
-    println myIntroLongVersion
-}
-
-
 int number = 52
-int degree = 2
+int degree = 3
 
 assert number ** degree == pow(number, degree)
 assert number ** degree == round(exp(degree * log(number)))
+
+if (isShortVersion) {
+    myIntroShortVersion
+} else {
+    myIntroLongVersion
+}
